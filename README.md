@@ -433,4 +433,4 @@ Contiene el historial y metadatos de Git (**no** se enumeran aquí los miles de 
 
 **Valentina Mancilla**
 
-*(Si el docente exige otro formato de créditos, ajusta esta línea.)*
+
