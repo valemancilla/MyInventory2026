@@ -18,6 +18,17 @@
     <Folder Include="src\modules\provider\Infrastructure\entity\" />
     <Folder Include="src\modules\provider\Infrastructure\repository\" />
     <Folder Include="src\modules\provider\UI\" />
+    <Folder Include="src\modules\product\Application\" />
+    <Folder Include="src\modules\product\Application\Interfaces\" />
+    <Folder Include="src\modules\product\Application\Services\" />
+    <Folder Include="src\modules\product\Application\UseCases\" />
+    <Folder Include="src\modules\product\Domain\aggregate\" />
+    <Folder Include="src\modules\product\Domain\Repositories\" />
+    <Folder Include="src\modules\product\Domain\valueObject\" />
+    <Folder Include="src\modules\product\Infrastructure\" />
+    <Folder Include="src\modules\product\Infrastructure\entity\" />
+    <Folder Include="src\modules\product\Infrastructure\repository\" />
+    <Folder Include="src\modules\product\UI\" />
     <Folder Include="src\shared\" />
     <Folder Include="src\shared\configurations\" />
     <Folder Include="src\shared\context\" />

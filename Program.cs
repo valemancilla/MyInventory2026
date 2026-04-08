@@ -1,4 +1,8 @@
-﻿using MyInventory2026.src.modules.provider.Application.Interfaces;
+﻿using MyInventory2026.src.modules.product.Application.Interfaces;
+using MyInventory2026.src.modules.product.Application.Services;
+using MyInventory2026.src.modules.product.Infrastructure.repository;
+using MyInventory2026.src.modules.product.UI;
+using MyInventory2026.src.modules.provider.Application.Interfaces;
 using MyInventory2026.src.modules.provider.Application.Services;
 using MyInventory2026.src.modules.provider.Infrastructure.repository;
 using MyInventory2026.src.modules.provider.UI;
@@ -10,11 +14,14 @@ try
 {
     var context = DbContextFactory.Create();
     var providerRepository = new ProviderRepository(context);
+    var productRepository = new ProductRepository(context);
     var unitOfWork = new UnitOfWork(context);
     IProviderService providerService = new ProviderService(providerRepository, unitOfWork);
+    IProductService productService = new ProductService(productRepository, unitOfWork);
     var modules = new List<IModuleUI>
     {
-        new ProviderConsoleUI(providerService)
+        new ProviderConsoleUI(providerService),
+        new ProductConsoleUI(productService)
     };
 
     if (context.Database.CanConnect())

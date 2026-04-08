@@ -13,12 +13,12 @@ public sealed class ProviderEntityConfiguration : IEntityTypeConfiguration<Provi
 
         builder.Property(x => x.Id)
             .HasColumnName("id")
-            .HasMaxLength(64)
+            .HasMaxLength(20)
             .IsRequired();
 
         builder.Property(x => x.Name)
-            .HasColumnName("name")
-            .HasMaxLength(150)
+            .HasColumnName("nameProvider")
+            .HasMaxLength(50)
             .IsRequired();
     }
 }

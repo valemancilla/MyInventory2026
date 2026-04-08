@@ -119,3 +119,4 @@ C:\Users\ASUS\Documents\PROGRAMACION\C#\MyInventory2026\obj\Debug\net10.0\refint
 C:\Users\ASUS\Documents\PROGRAMACION\C#\MyInventory2026\obj\Debug\net10.0\MyInventory2026.pdb
 C:\Users\ASUS\Documents\PROGRAMACION\C#\MyInventory2026\obj\Debug\net10.0\MyInventory2026.genruntimeconfig.cache
 C:\Users\ASUS\Documents\PROGRAMACION\C#\MyInventory2026\obj\Debug\net10.0\ref\MyInventory2026.dll
+C:\Users\ASUS\Documents\PROGRAMACION\C#\MyInventory2026\obj\Debug\net10.0\MyInventory2026.sourcelink.json
