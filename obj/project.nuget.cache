@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ONN9OE41izY=",
+  "dgSpecHash": "WfR+YnGU3Ak=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ASUS\\Documents\\PROGRAMACION\\C#\\MyInventory2026\\MyInventory2026.csproj",
+  "projectFilePath": "C:\\Users\\ASUS\\Documents\\PROGRAMACION\\C#\\CSharProjects\\MyInventory2026\\MyInventory2026.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ASUS\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",

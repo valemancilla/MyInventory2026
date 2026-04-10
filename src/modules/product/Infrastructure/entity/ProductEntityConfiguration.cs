@@ -17,28 +17,35 @@ public sealed class ProductEntityConfiguration : IEntityTypeConfiguration<Produc
 
         builder.Property(x => x.CodeInv)
             .HasColumnName("codeInv")
-            .HasMaxLength(10)
+            .HasColumnType("varchar(10)")
             .IsRequired();
 
         builder.HasIndex(x => x.CodeInv)
-            .IsUnique();
+            .IsUnique()
+            .HasDatabaseName("IX_product_CodeInv");
 
         builder.Property(x => x.NameProduct)
             .HasColumnName("nameProduct")
-            .HasMaxLength(50)
+            .HasColumnType("varchar(50)")
             .IsRequired();
 
         builder.Property(x => x.Stock)
             .HasColumnName("stock")
+            .HasColumnType("int")
             .IsRequired();
+            builder.ToTable(t => t.HasCheckConstraint("CK_Product_Stock", "Stock >= 0"));
 
         builder.Property(x => x.StockMin)
             .HasColumnName("stock_min")
+            .HasColumnType("int")
             .IsRequired();
+            builder.ToTable(t => t.HasCheckConstraint("CK_Product_Stock", "Stock >= 0"));
 
         builder.Property(x => x.StockMax)
             .HasColumnName("stck_max")
+            .HasColumnType("int")
             .IsRequired();
+            builder.ToTable(t => t.HasCheckConstraint("CK_Product_Stock", "Stock >= 0"));
     }
 }
 
